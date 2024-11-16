@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الذاكرة</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- preloader -->
+    <div id="overlay">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spalash screen -->
+    <div class="start">
+        <div class="start-content">
+            <img src="images/bg/bg.png" alt="background" />
+            <div class="start-text">
+                <h4>اهلا بك ! دعنا نختبر ذاكرتك</h4>
+            </div>
+            <button class="start-btn">ابداء اللعب</button>
+        </div>
+    </div>
+     <!-- Information Section-->
+     
+    <div class="information">
+        <div class="info">
+            <h3>التطابق: <span class="matched">0</span></h3>
+            <h3>محاولات الخاطيئة: <span class="tries">0</span></h3>  
+            <h4><i class="fa fa-clock-o"></i><span class="time">40</span></h4>
+        </div>
+    </div>
+
+    <!-- Memory Game Blocks -->
+
+    <div class="memory-game-blocks">
+        <!-- Block -->
+        <div class="game-block" data-technology="card1">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card1.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card1">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card1.png" alt="" />
+            </div>
+        </div>
+         <!-- Block -->
+         <div class="game-block" data-technology="card2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card2.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card2.png" alt="" />
+            </div>
+        </div>
+         <!-- Block -->
+         <div class="game-block" data-technology="card3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card3.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card3.png" alt="" />
+            </div>
+        </div>
+         <!-- Block -->
+         <div class="game-block" data-technology="card4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card4.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card4.png" alt="" />
+            </div>
+        </div>
+         <!-- Block -->
+         <div class="game-block" data-technology="card5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card5.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card5.png" alt="" />
+            </div>
+        </div>
+         <!-- Block -->
+         <div class="game-block" data-technology="card6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card6.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-technology="card6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/level1/card6.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over -->
+    <div class="game-over">
+        <div class="restart-text">
+            <img src="images/sad.png" alt="" />
+            <h3>انتهى الوقت</h3>
+            <button class='restart-btn'><a href="index.html">اعادة المحاولة</a></button>
+        </div>
+    </div>
+
+    <!-- Win Game -->
+    <div class="win">
+        <div class="win-block">
+            <img src="images/happy.png" alt="" />
+            <h2>تهانينا! لقد فزت</h2>
+            <h3>محاولات خاطيئة: <span class="win-info">10</span></h3>
+            <button><a href="index.html">اللعب مرة اخرى</a></button>
+        </div>
+    </div>
+
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <audio id ="background-music" src="audio/background-music.mp3" preload="auto"></audio>
+    <audio id ="win-music" src="audio/win.mp3" preload="auto"></audio>
+
+<script src="js/main.js"></script>
+</body>
+</html>
